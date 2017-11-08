@@ -1,6 +1,6 @@
 # bim360docs-documents-powerbi
 
-R script that uses 2-legged OAuth and Data Management API to extract documents' attributes from [BIM 360 Docs](https://docs.b360.autodesk.com/login) project.
+R script that uses 2-legged OAuth and Data Management API to extract documents' attributes from a [BIM 360 Docs](https://docs.b360.autodesk.com/login) project.
 
 [![R](http://img.shields.io/:R-v3.4.1-blue.svg)](https://www.r-project.org/)
 [![PowerBI](https://img.shields.io/badge/PowerBI-v2.51-blue.svg)](http://powerbi.microsoft.com/)
