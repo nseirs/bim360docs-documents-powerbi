@@ -25,9 +25,11 @@ This is a sample code that shows how to use [R programming](https://www.r-projec
 * Click on “Add Custom Integration” button to register your app for this specific account.
 * Take note of the **BIM 360 Account ID**.
 
-#### 3. Add Custom Integration to BIM 360 Account
-* Log into your BIM 360 Docs, https://docs.b360.autodesk.com/ and select a project
+#### 3. Obtain Project ID from BIM 360 Docs project
+* Log into BIM 360 Docs, https://docs.b360.autodesk.com/ and select the project that you want to export documents' attributes from.
 * Take note of the **BIM 360 Docs Project ID** from the browser address bar. The **Project ID** is a 36 characters that follows **'https://docs.b360.autodesk.com/projects/'** (between  slashes).
+
+![](project_id.jpg)
 
 #### 4. Setup R
 * Install **[R](https://cran.r-project.org/mirrors.html)**:  Here is a guide on how to install R, http://rprogramming.net/how-to-install-r-fast/.
