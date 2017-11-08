@@ -27,7 +27,7 @@ This is a sample code that shows how to use [R programming](https://www.r-projec
 
 #### 3. Obtain Project ID from BIM 360 Docs project
 * Log into BIM 360 Docs, https://docs.b360.autodesk.com/ and select the project that you want to export documents' attributes from.
-* Take note of the **BIM 360 Docs Project ID** from the browser address bar. The **Project ID** is a 36 characters that follows **'https://docs.b360.autodesk.com/projects/'** (between  slashes).
+* Take note of the **BIM 360 Docs Project ID** from the browser address bar. The **Project ID** is a 36 characters that follows 'https://docs.b360.autodesk.com/projects/' (between  slashes).
 
 ![](project_id.jpg)
 
