@@ -48,7 +48,9 @@ Parse_Folder <- function(folder_id, folder_name){
   if (nrow(Folder_Content_Data) != 0){
     for(i in 1:nrow(Folder_Content_Data)){
       if(Folder_Content_Data[i,"data.type"]=="folders"){
+        tryCatch({
         Parse_Folder(Folder_Content_Data[i,"data.id"], paste(folder_name, "/", Folder_Content_Data[i,"data.attributes.displayName"], sep=""))
+        }, error=function(e){})
       }
     }
   }
@@ -80,7 +82,9 @@ BIM360Docs_Document_List <- data.frame(Date=as.Date(character()), File=character
 for(i in 1:nrow(TopFolders_Content)){
   TopFolderName <- TopFolders_Content[i,"data.attributes.displayName"]
   if (TopFolderName != "ProjectTb" && TopFolderName != "Photos" && TopFolderName != "Recycle Bin" ){
+    tryCatch({
   Parse_Folder(TopFolders_Content[i,"data.id"], TopFolderName)
+    }, error=function(e){})
   }
 }
 
@@ -96,6 +100,7 @@ names(BIM360Docs_Document_List)[names(BIM360Docs_Document_List)=="included.attri
 names(BIM360Docs_Document_List)[names(BIM360Docs_Document_List)=="included.attributes.createTime"] <- "Created Date"
 names(BIM360Docs_Document_List)[names(BIM360Docs_Document_List)=="included.attributes.lastModifiedTime"] <- "Updated Date"
 
+
 # Clear Variables
 rm(i, Access_Token,
    App_Client_ID,
@@ -109,4 +114,4 @@ rm(i, Access_Token,
    TopFolders_Content,
    TopFolderName,
    Parse_Folder
-   )
+)
