@@ -47,7 +47,7 @@ Before executing the R script from the **Export BIM360 Company Data.R** file, in
 * Click Ok and select **BIM360Docs_Document_List** table to load it to PowerBI
 
 ## Power BI Template
-To test how this R script works in Power BI, downlaod the following [PowerBI Template for BIM 360 Docs Document Data.pbit](http://autode.sk/bim360docsdocumentstemplate)
+To test how this R script works in Power BI, downlaod the following [PowerBI Template for BIM 360 Docs Document Data.pbit](https://github.com/nseirs/bim360docs-documents-powerbi/blob/master/PowerBI%20Template%20for%20BIM%20360%20Docs%20Document%20Data.pbit?raw=true)
 
 To run this template, you need  **Client ID**, **Client Secret**, **BIM 360 Account ID**, and **BIM 360 Docs Project ID** from steps 1, 2, & 3 in [**Setup**](#setup) and you need to setup R as per step 4 in [**Setup**](#setup).
 
@@ -64,4 +64,4 @@ Please see the [LICENSE](LICENSE) file for full details.
 
 ## Written by
 
-Sam Nseir, P.E. [@samnseirpe](https://www.linkedin.com/in/samnseirpe/), [Autodesk Enterprise Priority Support](https://enterprisehub.autodesk.com/)
+Sam Nseir, P.E. [@samnseirpe](https://www.linkedin.com/in/samnseirpe/)
